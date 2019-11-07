@@ -10,5 +10,8 @@ This project is about looking at data from a bike sharing program.  There are 3 
 ### Files Used
 This program uses 3 CSV files.  Each one is for a different city.  They are called chicago.csv, new_york_city.csv, washington.csv.
 
+### Usage
+For using this program, I recommend running the file on terminal.  There is user input at the beginning of the run.  For editing, I used Atom.
+
 ### Credits
 Credit for this project goes to the Udacity Program, as they have provided all the documents and guidlines that I followed.
