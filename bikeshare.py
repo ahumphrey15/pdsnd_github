@@ -187,7 +187,7 @@ def main():
 
 #See if user wants to restart the process
         restart = input('\nWould you like to restart this data project? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        if restart.upper() != 'YES':
             break
 
 
