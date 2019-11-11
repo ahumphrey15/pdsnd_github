@@ -16,7 +16,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s have some fun exploring some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     input1=input('Please select either Chicago, New York City, or Washington: ')
     while input1.upper()!='CHICAGO' and input1.upper()!='NEW YORK CITY' and input1.upper()!='WASHINGTON':
@@ -26,14 +26,14 @@ def get_filters():
 
 
     # TO DO: get user input for month (all, january, february, ... , june)
-    input2=input("Please select a month between January-June, or 'All' for all months: ")
+    input2=input("Please select a month between January-June, or 'ALL' for all months: ")
     while input2.upper()!='JANUARY' and input2.upper()!='FEBRUARY' and input2.upper()!='MARCH' and input2.upper()!='APRIL' and input2.upper()!='MAY' and input2.upper()!='JUNE' and input2.upper()!='ALL':
        print('Invalid Response. Please try again')
        input2=input("Please select a month between January-June, or 'All' for all months: ")
     month=input2.lower()
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    input3=input("Please select a day of the week (Monday, Tuesday, etc), or 'All' for all days: ")
+    input3=input("Please select a day of the week (Monday, Tuesday, etc), or 'ALL' for all days: ")
     while input3.upper()!='SUNDAY' and input3.upper()!='MONDAY' and input3.upper()!='TUESDAY' and input3.upper()!='WEDNESDAY' and input3.upper()!='THURSDAY' and input3.upper()!='FRIDAY' and input3.upper()!='SATURDAY' and input3.upper()!='ALL':
         print('Invalid Response. Please try again')
         input3=input("Please select a day of the week (Monday, Tuesday, etc), or 'All' for all days: ")
@@ -187,7 +187,7 @@ def main():
 
 #See if user wants to restart the process
         restart = input('\nWould you like to restart this data project? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        if restart.upper() != 'YES':
             break
 
 
